@@ -34,13 +34,13 @@ export default function ExperienceActeurBancaire() {
             <div className='flex flex-row items-center gap-[var(--spacing-l)]'>
               <p className='text2'>Saas ・ B2E</p>
               <div style={{width: "var(--dimension-3xs)", height: "var(--dimension-sm)", borderRadius: "var(--radius-2xs)", backgroundColor: "var(--color-divider)",}}/>
-              <span className='text2 !font-semibold'>2022-2023</span>
+              <span className='text2'>2022-2023</span>
             </div>
             <Badges badges = {[{text: "Lead"}, {text: "Branding"}, {text: "UX Design"}, {text: "UI Design"}, {text: "Design System"}, {text: "Product Management"},]}></Badges>
             <p className='text1 max-w-[720px] pb-[var(--spacing-sm)]'>
                 Refonte UX & UI de la Marketplace, plateforme e-commerce des produits utilisés dans le cadre de leur travail les collaborateurs de cet acteur bancaire. <br />
             </p>
-            <img src="/images/acteurbancaire-intro.png" alt="maquettes montrant l'interface graphique"></img>
+            <img src="/images/marketplace-intro.png" alt="maquettes montrant l'interface graphique"></img>
         </section>
 
         {/* PRÉSENTATION */}
@@ -62,13 +62,13 @@ export default function ExperienceActeurBancaire() {
         {/* TIMELINE */}
         <section id="timeline" className={sectionProps}>
             <h2 className='h2'>Timeline Projet</h2>
-            <img src="/images/acteurbancaire-timeline.png" alt="timeline du projet, de Novembre à Juin"></img>
+            <img src="/images/marketplace-timeline.png" alt="timeline du projet, de Novembre à Juin"></img>
         </section>
 
         {/* LOGOS */}
         <section id="logos" className={sectionProps}>
             <h2 className='h2'>Logos</h2>
-            <img src="/images/acteurbancaire-graphic-design.png" alt="déclinaisons des logos Marketplace"></img>
+            <img src="/images/marketplace-graphic-design.png" alt="déclinaisons des logos Marketplace"></img>
         </section>
 
         {/* DESIGN SYSTEM */}
@@ -80,15 +80,15 @@ export default function ExperienceActeurBancaire() {
         {/* MAQUETTES */}
         <section id="maquettes" className={sectionProps}>
             <h2 className='h2'>Maquettes</h2>
-            <img src="/images/acteurbancaire-maquettes1.png" alt="maquettes de la page d'accueil, light mode & dark mode" className='pb-[var(--spacing-xl)]'></img>
-            <img src="/images/acteurbancaire-maquettes2.png" alt="maquettes affichant la liste des produits d'un Product Owner" className='pb-[var(--spacing-xl)]'></img>
-            <img src="/images/acteurbancaire-maquettes3.png" alt="maquettes affichant le cockpit d'un produit"></img>
+            <img src="/images/marketplace-maquettes1.png" alt="maquettes de la page d'accueil, light mode & dark mode" className='pb-[var(--spacing-xl)]'></img>
+            <img src="/images/marketplace-maquettes2.png" alt="maquettes affichant la liste des produits d'un Product Owner" className='pb-[var(--spacing-xl)]'></img>
+            <img src="/images/marketplace-maquettes3.png" alt="maquettes affichant le cockpit d'un produit"></img>
         </section>
 
         <div id="main-actions" className='flex flex-col-reverse gap-[var(--spacing-ml)] sm:flex-row justify-between pt-[var(--spacing-xl)] pb-[var(--spacing-4xl)]'>
             <ButtonsList
               size="large"
-              tertiaryAction={{text: "Projet précédent", onClick: () => router.push('/experiences/mesr'), leadingIcon: "arrow-back",}}             
+              tertiaryAction={{text: "Projet précédent", onClick: () => router.push('/experiences/cofolio'), leadingIcon: "arrow-back",}}             
             /> 
             <ButtonsList
               size="large"

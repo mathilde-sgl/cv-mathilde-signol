@@ -32,8 +32,8 @@ export default function Experiences() {
           <ProjectCard
             title='Cofolio'
             id = "mesr"
-            href = "/experiences/mesr"
-            image = "/images/project-mesr.png"
+            href = "/experiences/cofolio"
+            image = "/images/project-cofolio.png"
             typeText = 'Saas ・ B2C'
             badges = {[{text: "UX Design"}, {text: "UI Design"}, {text: "Design System"}]}>
           </ProjectCard>
@@ -41,9 +41,9 @@ export default function Experiences() {
           {/* Projet Acteur Bancaire */}
           <ProjectCard
             title='Marketplace'
-            id = "acteur-bancaire"
-            href = "/experiences/acteur-bancaire"
-            image = "/images/project-acteur-bancaire.png"
+            id = "marketplace"
+            href = "/experiences/marketplace"
+            image = "/images/project-marketplace.png"
             typeText = 'Saas ・ B2E'
             badges = {[{text: "Lead"}, {text: "Branding"}, {text: "UX Design"}, {text: "UI Design"}, {text: "Design System"}, {text: "Product Management"},]}>
           </ProjectCard>
@@ -56,6 +56,16 @@ export default function Experiences() {
             image = "/images/project-cpf.png"
             typeText = 'Site web ・ App ・ B2C'
             badges = {[{text: "Branding"}, {text: "UX Design"}, {text: "UI Design"}, {text: "Design System"}, {text: "Product Management"},]}>
+          </ProjectCard>
+
+          {/* Projet Welcome Studio */}
+          <ProjectCard
+            title='Welcome Studio'
+            id = "welcome-studio"
+            href = "/experiences/welcomestudio"
+            image = "/images/project-welcomestudio.png"
+            typeText = 'Prototype Figma'
+            badges = {[{text: "UX Design"}, {text: "UI Design"}, {text: "Graphisme"}]}>
           </ProjectCard>
 
           {/* Projet CERTIF */}
@@ -86,15 +96,6 @@ export default function Experiences() {
             typeText = 'Agence de Design'
             badges = {[{text: "Lead"}, {text: "Branding"}, {text: "Graphisme"}]}>
           </ProjectCard>
-
-          {/* Projet mc2i */}
-          {/* <ProjectCard
-            title='mc2i'
-            id = "mc2i"
-            image = "/images/project-mc2i.png"
-            typeText = 'Cabinet de conseil'
-            badges = {[{text: "Branding"}, {text: "Communication"}, {text: "Graphisme"}]}>
-          </ProjectCard> */}
 
         </section>
         

@@ -34,7 +34,7 @@ export default function ExperienceMonCompteFormation() {
             <div className='flex flex-row items-center gap-[var(--spacing-l)]'>
               <p className='text2'>Site web ・ App ・ B2C</p>
               <div style={{width: "var(--dimension-3xs)", height: "var(--dimension-sm)", borderRadius: "var(--radius-2xs)", backgroundColor: "var(--color-divider)",}}/>
-              <p className='text2 !font-semibold'>2020-2022</p>
+              <p className='text2'>2020-2022</p>
             </div>
             <Badges badges = {[{text: "Branding"}, {text: "UX Design"}, {text: "UI Design"}, {text: "Design System"}, {text: "Product Management"},]}></Badges>
             <p className='text1 max-w-[720px] pb-[var(--spacing-sm)]'>
@@ -94,11 +94,11 @@ export default function ExperienceMonCompteFormation() {
         <div id="main-actions" className='flex flex-col-reverse gap-[var(--spacing-ml)] sm:flex-row justify-between pt-[var(--spacing-xl)] pb-[var(--spacing-4xl)]'>
             <ButtonsList
               size="large"
-              tertiaryAction={{text: "Projet précédent", onClick: () => router.push('/experiences/acteur-bancaire'), leadingIcon: "arrow-back",}}             
+              tertiaryAction={{text: "Projet précédent", onClick: () => router.push('/experiences/marketplace'), leadingIcon: "arrow-back",}}             
             /> 
             <ButtonsList
               size="large"
-              secondaryAction={{text: "Projet suivant", onClick: () => router.push('/experiences/certificateurs'), leadingIcon: "arrow-next",}}             
+              secondaryAction={{text: "Projet suivant", onClick: () => router.push('/experiences/welcomestudio'), leadingIcon: "arrow-next",}}             
             />        
         </div>
       </div>

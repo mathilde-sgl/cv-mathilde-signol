@@ -34,13 +34,13 @@ export default function ExperienceMesr() {
             <div className='flex flex-row items-center gap-[var(--spacing-l)]'>
               <p className='text2'>Saas ・ B2C</p>
               <div style={{width: "var(--dimension-3xs)", height: "var(--dimension-sm)", borderRadius: "var(--radius-2xs)", backgroundColor: "var(--color-divider)",}}/>
-              <p className='text2 !font-semibold'>2024</p>
+              <p className='text2'>2024</p>
             </div>
             <Badges badges={[{text: "UX Design"}, {text: "UI Design"}, {text: "Design System"}]}></Badges>
             <p className='text1 max-w-[560px] pb-[var(--spacing-sm)]'>
                 Création d'un dispositif ePortfolio pour valoriser une approche par compétences des étudiants français. <br />
             </p>
-            <img src="/images/mesr-intro.png" alt="maquettes montrant l'interface graphique"></img>
+            <img src="/images/cofolio-intro.png" alt="maquettes montrant l'interface graphique"></img>
         </section>
 
         {/* PRÉSENTATION */}
@@ -60,31 +60,35 @@ export default function ExperienceMesr() {
         {/* CHARTE GRAPHIQUE */}
         <section id="charte-graphique" className={sectionProps}>
             <h2 className='h2'>Charte Graphique</h2>
-            <img src="/images/mesr-graphic-design.png" alt="charte graphique de Cofolio"></img>
+            <img src="/images/cofolio-graphic-design.png" alt="charte graphique de Cofolio"></img>
         </section>
 
         {/* DESIGN SYSTEM */}
         <section id="design-system" className={sectionProps}>
             <h2 className='h2'>Design System</h2>
-            <img src="/images/mesr-design-system.png" alt="design System de Cofolio"></img>
+            <img src="/images/cofolio-design-system.png" alt="design System de Cofolio"></img>
         </section>
 
         {/* USER FLOW */}
         <section id="userflow" className={sectionProps}>
             <h2 className='h2'>Parcours utilisateurs</h2>
-            <img src="/images/mesr-userflow.png" alt="parcours utilisateur d'un étudiant qui souhaite suivre et valoriser ses compétences"></img>
+            <img src="/images/cofolio-userflow.png" alt="parcours utilisateur d'un étudiant qui souhaite suivre et valoriser ses compétences"></img>
         </section>
 
         {/* MAQUETTES */}
         <section id="maquettes" className={sectionProps}>
             <h2 className='h2'>Maquettes</h2>
-            <img src="/images/mesr-maquettes1.png" alt="3 maquettes montrant l'inferface Cofolio"></img>
+            <img src="/images/cofolio-maquettes1.png" alt="3 maquettes montrant l'inferface Cofolio"></img>
         </section>
 
-        <div id="main-actions" className='flex items-end justify-end pt-[var(--spacing-xl)] pb-[var(--spacing-4xl)]'>    
+        <div id="main-actions" className='flex flex-col-reverse gap-[var(--spacing-ml)] sm:flex-row justify-between pt-[var(--spacing-xl)] pb-[var(--spacing-4xl)]'>
             <ButtonsList
               size="large"
-              secondaryAction={{text: "Projet suivant", onClick: () => router.push('/experiences/acteur-bancaire'), leadingIcon: "arrow-next",}}             
+              tertiaryAction={{text: "Projet précédent", onClick: () => router.push('/experiences/imagine'), leadingIcon: "arrow-back",}}             
+            /> 
+            <ButtonsList
+              size="large"
+              secondaryAction={{text: "Projet suivant", onClick: () => router.push('/experiences/marketplace'), leadingIcon: "arrow-next",}}             
             />        
         </div>
       </div>

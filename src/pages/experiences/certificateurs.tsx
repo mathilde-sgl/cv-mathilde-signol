@@ -34,7 +34,7 @@ export default function ExperienceCertificateurs() {
             <div className='flex flex-row items-center gap-[var(--spacing-l)]'>
               <p className='text2'>Saas ・ B2B</p>
               <div style={{width: "var(--dimension-3xs)", height: "var(--dimension-sm)", borderRadius: "var(--radius-2xs)", backgroundColor: "var(--color-divider)",}}/>
-              <span className='text2 !font-semibold'>2022</span>
+              <span className='text2'>2022</span>
             </div>
             <Badges badges = {[{text: "Branding"}, {text: "UX Design"}, {text: "UI Design"}]}></Badges>
             <p className='text1 max-w-[720px] pb-[var(--spacing-sm)]'>
@@ -82,7 +82,7 @@ export default function ExperienceCertificateurs() {
         <div id="main-actions" className='flex flex-col-reverse gap-[var(--spacing-ml)] sm:flex-row justify-between pt-[var(--spacing-xl)] pb-[var(--spacing-4xl)]'>
             <ButtonsList
               size="large"
-              tertiaryAction={{text: "Projet précédent", onClick: () => router.push('/experiences/moncompteformation'), leadingIcon: "arrow-back",}}             
+              tertiaryAction={{text: "Projet précédent", onClick: () => router.push('/experiences/welcomestudio'), leadingIcon: "arrow-back",}}             
             /> 
             <ButtonsList
               size="large"

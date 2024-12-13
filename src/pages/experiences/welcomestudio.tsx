@@ -8,14 +8,14 @@ import Head from 'next/head';
 
 const sectionProps = "w-full space-y-[var(--spacing-ml)] pb-[var(--spacing-xl)] sm:pb-[var(--spacing-2xl)]"
 
-export default function Imagine() {
+export default function Page() {
   const router = useRouter();
 
   return (
     <div className="flex flex-col bg-[var(--color-background)]">
       <Head>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
-        <title> Imagine - Mathilde Signol </title>
+        <title> Welcome Studio - Mathilde Signol </title>
       </Head>
 
       {/* TOP BAR */}
@@ -26,58 +26,58 @@ export default function Imagine() {
         
         {/* TITLE */}
         <section id="title" className='pb-[var(--spacing-xl)]'>
-            <h1 className="h1">Imagine</h1>
+            <h1 className="h1">Welcome Studio</h1>
         </section>
 
         {/* INTRODUCTION */}
         <section id="introduction" className={sectionProps}>
-           <div className='flex flex-row items-center gap-[var(--spacing-l)]'> 
-              <p className='text2'>Agence de Design</p>
+            <div className='flex flex-row items-center gap-[var(--spacing-l)]'>
+              <p className='text2'>Prototype Figma ・ B2E</p>
               <div style={{width: "var(--dimension-3xs)", height: "var(--dimension-sm)", borderRadius: "var(--radius-2xs)", backgroundColor: "var(--color-divider)",}}/>
-              <span className='text2'>2020-2024</span>
+              <span className='text2'>2023</span>
             </div>
-            <Badges badges = {[{text: "Branding"}, {text: "UX Design"}, {text: "UI Design"}]}></Badges>
+            <Badges badges = {[{text: "Lead"}, {text: "UX Design"}, {text: "UI Design"}, {text: "Graphisme"} ]}></Badges>
             <p className='text1 max-w-[720px] pb-[var(--spacing-sm)]'>
-            Création de visuels à destination de l'agence de design de mc2i : Imagine.
+                Réalisation d'une infographie intéractive pour accueillir les nouveaux contributeurs au Studio, agence créa de mc2i.<br />
             </p>
-            <img src="/images/imagine-intro.png" alt="maquettes montrant l'interface graphique"></img>
+            <img src="/images/welcomestudio-intro.png" alt="maquettes montrant l'interface graphique"></img>
         </section>
 
         {/* PRÉSENTATION */}
         <section id="presentation" className={sectionProps}>
             <h2 className='h3 !text-[var(--color-symbol-primary)]'>Contexte</h2>
             <p className='text1 max-w-[720px] pb-[var(--spacing-sm)]'>
-            Initialement une offre orientée Design Thinking, Imagine devient en 2021 l'agence de Design de mc2i.
-            Elle veut donc se doter d'une nouvelle identité, refletant son ambition.
+            Le Studio mc2i accueille régulièrement de nouveaux arrivants, qui ont besoin d'assimiler
+            un grand nombre d'informations.
             </p>
             <h2 className='h3 !text-[var(--color-symbol-primary)]'>Enjeux</h2>
             <p className='text1 max-w-[720px] pb-[var(--spacing-sm)] flex flex-col gap-[var(--spacing-xs)]'>
-              <span> → Réaliser la direction artistique et les supports commerciaux de l'agence. </span>
-              <span> → Accompagner de designers Junior dans leur montée en compétences. </span>
+              <span> Faciliter l'accompagnement des consultants qui ont envie de rejoindre le Studio mc2i.</span>
             </p>
         </section>
 
-        {/* LOGOS */}
-        <section id="logos" className={sectionProps}>
-            <h2 className='h2'>Logos</h2>
-            <img src="/images/imagine-logos.png" alt="maquettes de la page d'accueil, en version mobile & desktop"></img>
+        {/* PARCOURS UTILISATEURS */}
+        <section id="userflow" className={sectionProps}>
+            <h2 className='h2'>Parcours utilisateurs</h2>
+            <img src="/images/welcomestudio-userflow.png" alt="Parcours utilisateur (complexe) du Welcome Studio"></img>
         </section>
 
-        {/* VISUELS */}
-        <section id="visuels" className={sectionProps}>
-            <h2 className='h2'>Visuels</h2>
-            <img src="/images/imagine-visuels1.png" alt="photos retravaillées lot 1" className='pb-[var(--spacing-xl)]'></img>
-            <img src="/images/imagine-visuels2.png" alt="photos retravaillées lot 2"></img>
+        {/* PROTOTYPE */}
+        <section id="prorotype" className={sectionProps}>
+            <h2 className='h2'>Prototype</h2>
+            <video autoPlay loop width="100%" height="auto" preload="metadata" style={{borderRadius: 'var(--radius-xl)', borderColor: 'var(--color-divider)'}}>
+              <source src="/videos/welcomestudio-prototype.mov" type="video/quicktime" />
+            </video>
         </section>
 
         <div id="main-actions" className='flex flex-col-reverse gap-[var(--spacing-ml)] sm:flex-row justify-between pt-[var(--spacing-xl)] pb-[var(--spacing-4xl)]'>
             <ButtonsList
               size="large"
-              tertiaryAction={{text: "Projet précédent", onClick: () => router.push('/experiences/certificateurs'), leadingIcon: "arrow-back",}}             
+              tertiaryAction={{text: "Projet précédent", onClick: () => router.push('/experiences/moncompteformation'), leadingIcon: "arrow-back",}}             
             /> 
             <ButtonsList
               size="large"
-              secondaryAction={{text: "Projet suivant", onClick: () => router.push('/experiences/cofolio'), leadingIcon: "arrow-next",}}             
+              secondaryAction={{text: "Projet suivant", onClick: () => router.push('/experiences/certificateurs'), leadingIcon: "arrow-next",}}             
             />        
         </div>
       </div>

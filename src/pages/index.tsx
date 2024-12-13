@@ -171,9 +171,9 @@ export default function Homepage() {
           {/* Projet MESR */}
           <ProjectCard
             title='Cofolio'
-            id = "mesr"
-            href = "/experiences/mesr"
-            image = "/images/project-mesr.png"
+            id = "cofolio"
+            href = "/experiences/cofolio"
+            image = "/images/project-cofolio.png"
             typeText = 'Saas ・ B2C'
             badges = {[{text: "UX Design"}, {text: "UI Design"}, {text: "Design System"}]}>
           </ProjectCard>
@@ -181,9 +181,9 @@ export default function Homepage() {
           {/* Projet Acteur Bancaire */}
           <ProjectCard
             title='Marketplace'
-            id = "acteur-bancaire"
-            href = "/experiences/acteur-bancaire"
-            image = "/images/project-acteur-bancaire.png"
+            id = "marketplace"
+            href = "/experiences/marketplace"
+            image = "/images/project-marketplace.png"
             typeText = 'Saas ・ B2E'
             badges = {[{text: "Lead"}, {text: "Branding"}, {text: "UX Design"}, {text: "UI Design"}, {text: "Design System"}, {text: "Product Management"},]}>
           </ProjectCard>
