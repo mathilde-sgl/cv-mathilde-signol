@@ -65,9 +65,11 @@ export default function Page() {
         {/* PROTOTYPE */}
         <section id="prorotype" className={sectionProps}>
             <h2 className='h2'>Prototype</h2>
-            <video autoPlay loop width="100%" height="auto" preload="metadata" style={{borderRadius: 'var(--radius-xl)', borderColor: 'var(--color-divider)'}}>
-              <source src="/videos/welcomestudio-prototype.mov" type="video/quicktime" />
-            </video>
+            <div className='flex justify-center'>
+              <video autoPlay controls loop preload="metadata" className="w-full max-w-[800px] h-auto rounded-[var(--radius-xl)] border-[var(--color-divider)]">
+                <source src="/videos/welcomestudio-prototype.mp4" type="video/mp4" />
+              </video>
+            </div>
         </section>
 
         <div id="main-actions" className='flex flex-col-reverse gap-[var(--spacing-ml)] sm:flex-row justify-between pt-[var(--spacing-xl)] pb-[var(--spacing-4xl)]'>
