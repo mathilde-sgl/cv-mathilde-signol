@@ -77,6 +77,13 @@ export default function ExperienceMonCompteFormation() {
             <img src="/images/cpf-visuels.png" alt="visuels réalisés à partir de photos retravaillées"></img>
         </section>
 
+        {/* STRUCTURE */}
+        <section id="structure" className={sectionProps}>
+            <h2 className='h2'>Arborescences</h2>
+            <img src="/images/cpf-structure1.png" alt="arborescence de la fonctionnalité Aide" className='pb-[var(--spacing-xl)]'></img>
+            <img src="/images/cpf-structure2.png" alt="zoom sur la recherche de financement de l'arborescence de la fonctionnalité Aide"></img>
+        </section>
+
         {/* MAQUETTES */}
         <section id="maquettes" className={sectionProps}>
             <h2 className='h2'>Maquettes</h2>
@@ -88,7 +95,8 @@ export default function ExperienceMonCompteFormation() {
         {/* PROTOTYPES */}
         <section id="prototypes" className={sectionProps}>
             <h2 className='h2'>Prototypes</h2>
-            <img src="/images/cpf-prototype.png" alt="prototype de la recherche de formation"></img>
+            <img src="/images/cpf-prototype1.png" alt="prototype sur Figma du Dossier de Formation" className='pb-[var(--spacing-xl)]'></img>
+            <img src="/images/cpf-prototype2.png" alt="prototype sur Figma de la Recherche de Formation"></img>
         </section>
 
         <div id="main-actions" className='flex flex-col-reverse gap-[var(--spacing-ml)] sm:flex-row justify-between pt-[var(--spacing-xl)] pb-[var(--spacing-4xl)]'>
